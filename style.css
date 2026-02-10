@@ -6,7 +6,7 @@
 }
 body {
   font-family: 'Quicksand', sans-serif;
-  background: url('img/background.png') center/cover fixed no-repeat;
+  background: url('background.png') center/cover fixed no-repeat;
   color: #ffeacc;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -241,3 +241,4 @@ footer {
     opacity: 0;
   }
 }
+
