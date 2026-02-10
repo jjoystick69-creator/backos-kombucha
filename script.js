@@ -1,0 +1,23 @@
+// Effet de texte qui s’écrit lettre par lettre
+const slogan = "Infusé au rythme du vivant, à chaque gorgée.";
+const target = document.getElementById("slogan");
+let i = 0;
+
+function typeWriter() {
+  if (i < slogan.length) {
+    target.textContent += slogan.charAt(i);
+    i++;
+    setTimeout(typeWriter, 40);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", typeWriter);
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  const email = document.getElementById("email").value;
+  const emailPattern = /^[^@]+@[^@]+\.[^@]+$/;
+
+  if (!emailPattern.test(email)) {
+    alert("Adresse email invalide !");
+    e.preventDefault();
+  }
+});

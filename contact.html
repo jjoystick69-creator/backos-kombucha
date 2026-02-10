@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – Backos Kombucha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="bubbles-container"></div>
+
+  <header>
+    <div class="branding">
+      <img src="img/logo.png" alt="Logo" class="logo" />
+      <h1>Backos Kombucha</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Nous écrire</h2>
+    <p>Une question, une envie, une intuition ? Nous écoutons chaque message.</p>
+  </section>
+
+  <section class="form-section">
+  <form id="contactForm" action="traitement.php" method="POST">
+    <label for="name">Prénom ou pseudo :</label>
+    <input type="text" name="name" id="name" required />
+
+    <label for="email">Adresse email :</label>
+    <input type="email" id="email" name="email" placeholder="Votre email" required />
+
+    <label for="message">Ton message :</label>
+    <textarea name="message" id="message" rows="6" required></textarea>
+
+    <button type="submit" class="btn">Envoyer le message</button>
+  </form>
+</section>
+
+
+  <footer>
+    <p>Tous droits réservés<br />© 2025 Backos Kombucha – Vos mots sont aussi vivants que nos ferments</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
